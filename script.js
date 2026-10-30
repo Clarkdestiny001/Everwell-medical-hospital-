@@ -1,20 +1,18 @@
 /* =========================================================
-   EVERWELL MEDICAL CENTER — SCRIPT
+   EVERWELL MEDICAL CENTER - SCRIPT
    ========================================================= */
 
 /* =============== CONTENT DATA (modals) =============== */
 const SERVICES = {
   'general-medicine': {
     title: 'General Medicine',
-    icon: '🩹',
-    description: 'Our General Medicine team handles everyday health concerns, ongoing conditions, and preventive screening — the first stop for most patients and the hub that coordinates referrals to specialists when needed.',
+    description: 'Our General Medicine team handles everyday health concerns, ongoing conditions, and preventive screening, the first stop for most patients and the hub that coordinates referrals to specialists when needed.',
     treatments: ['Annual physicals & wellness exams', 'Cold, flu, and infection management', 'Chronic condition monitoring (diabetes, hypertension)', 'Preventive screenings & bloodwork', 'Referrals to specialists'],
     benefits: ['One consistent physician who knows your history', 'Same-week appointment availability', 'Direct digital access to results and notes'],
     whenToVisit: 'Book a visit for routine check-ups, unexplained symptoms, medication reviews, or whenever something feels off and you\'re not sure which specialist to see.'
   },
   'pediatrics': {
     title: 'Pediatrics',
-    icon: '🧸',
     description: 'Gentle, thorough care for infants through adolescence, delivered in a calm environment designed to put both kids and parents at ease.',
     treatments: ['Well-child visits & growth tracking', 'Childhood vaccinations', 'Developmental screenings', 'Acute illness care', 'Adolescent health & counseling'],
     benefits: ['Child-friendly exam rooms and staff', 'Flexible scheduling around school hours', 'Parents included in every care decision'],
@@ -22,15 +20,13 @@ const SERVICES = {
   },
   'cardiology': {
     title: 'Cardiology',
-    icon: '❤️',
     description: 'Comprehensive heart health monitoring, diagnostics, and long-term care for patients managing or preventing cardiovascular conditions.',
     treatments: ['ECG & echocardiogram', 'Blood pressure & cholesterol management', 'Arrhythmia evaluation', 'Cardiac stress testing', 'Post-cardiac-event follow-up'],
-    benefits: ['On-site diagnostic equipment — no extra travel', 'Long-term care plans tailored to your risk profile', 'Coordination with your primary physician'],
+    benefits: ['On-site diagnostic equipment, no extra travel', 'Long-term care plans tailored to your risk profile', 'Coordination with your primary physician'],
     whenToVisit: 'See a cardiologist for chest discomfort, shortness of breath, irregular heartbeat, a family history of heart disease, or as part of routine risk screening after age 40.'
   },
   'dentistry': {
     title: 'Dentistry',
-    icon: '🦷',
     description: 'Preventive and restorative dental care for the whole family, from routine cleanings to more involved restorative work.',
     treatments: ['Cleanings & exams', 'Fillings & restorations', 'Root canal therapy', 'Cosmetic consultations', 'Emergency dental care'],
     benefits: ['Modern, low-discomfort equipment', 'Transparent pricing before treatment begins', 'Same-day emergency slots when available'],
@@ -38,23 +34,20 @@ const SERVICES = {
   },
   'womens-health': {
     title: "Women's Health",
-    icon: '🌷',
-    description: 'Comprehensive, respectful care across every stage of a woman\'s life — from adolescence through pregnancy and beyond.',
+    description: 'Comprehensive, respectful care across every stage of a woman\'s life, from adolescence through pregnancy and beyond.',
     treatments: ['Annual wellness exams', 'Prenatal & postnatal care', 'Family planning & contraception counseling', 'Menopause management', 'Reproductive health screening'],
     benefits: ['Private, comfortable exam environment', 'Continuity of care across life stages', 'Same-day results for most screenings'],
     whenToVisit: 'Schedule an annual wellness exam, or book sooner for pregnancy care, cycle irregularities, or any new symptoms you\'d like evaluated.'
   },
   'laboratory': {
     title: 'Laboratory Services',
-    icon: '🧪',
-    description: 'Fast, accurate diagnostic testing with results delivered securely to your patient portal — usually within 24–48 hours.',
+    description: 'Fast, accurate diagnostic testing with results delivered securely to your patient portal, usually within 24–48 hours.',
     treatments: ['Bloodwork & metabolic panels', 'Urinalysis', 'Allergy & sensitivity testing', 'Rapid infectious disease testing', 'Specialist-ordered diagnostics'],
-    benefits: ['On-site lab — no separate appointment needed', 'Digital results with physician notes', 'Fasting and non-fasting testing options'],
+    benefits: ['On-site lab, no separate appointment needed', 'Digital results with physician notes', 'Fasting and non-fasting testing options'],
     whenToVisit: 'Come in whenever your physician orders labs, or proactively for annual bloodwork as part of a wellness exam.'
   },
   'vaccinations': {
     title: 'Vaccinations',
-    icon: '💉',
     description: 'Routine, catch-up, and travel immunizations for every age group, administered by our clinical team with your full history on file.',
     treatments: ['Routine childhood & adult immunizations', 'Seasonal flu shots', 'Travel vaccinations', 'Booster tracking & reminders', 'Titer testing'],
     benefits: ['Digital vaccination records you can access anytime', 'Walk-in availability for seasonal shots', 'Guidance for international travel requirements'],
@@ -62,7 +55,6 @@ const SERVICES = {
   },
   'emergency-care': {
     title: 'Emergency Care',
-    icon: '🚑',
     description: '24/7 emergency response with a rapid-triage team on call, equipped to stabilize and treat urgent conditions the moment you arrive.',
     treatments: ['Rapid triage & stabilization', 'Trauma & injury care', 'Acute cardiac & respiratory response', 'Emergency diagnostics on-site', 'Coordination with specialist teams'],
     benefits: ['Care available every hour of every day', 'Direct hand-off to specialists when needed', 'Dedicated emergency hotline for urgent guidance'],
@@ -98,7 +90,7 @@ const DOCTORS = {
     specialty: 'Pediatrics',
     photo: 'https://images.pexels.com/photos/32254655/pexels-photo-32254655.jpeg?auto=compress&cs=tinysrgb&w=300',
     experience: '9 years experience',
-    bio: 'Dr. Chen specializes in making young patients feel calm, safe, and heard — and in keeping parents fully informed at every step.',
+    bio: 'Dr. Chen specializes in making young patients feel calm, safe, and heard, and in keeping parents fully informed at every step.',
     qualifications: ['MD, Pediatrics', 'Board Certified in Pediatric Medicine'],
     specialties: ['Developmental screening', 'Childhood immunization', 'Adolescent health'],
     languages: ['English', 'Mandarin'],
@@ -125,9 +117,9 @@ const ARTICLES = {
     date: 'July 14, 2026',
     readTime: '4 min read',
     body: [
-      'Most serious health conditions don\'t announce themselves early. High blood pressure, elevated cholesterol, and early-stage diabetes often produce no symptoms at all until they\'ve been developing for years — which is exactly why routine screening matters more than how you feel on any given day.',
+      'Most serious health conditions don\'t announce themselves early. High blood pressure, elevated cholesterol, and early-stage diabetes often produce no symptoms at all until they\'ve been developing for years, which is exactly why routine screening matters more than how you feel on any given day.',
       'A good preventive schedule doesn\'t need to be complicated. Annual bloodwork, a blood pressure check at every visit, and age-appropriate screenings (colonoscopies, mammograms, skin checks) catch the vast majority of conditions while they\'re still highly treatable.',
-      'The habit that makes the biggest difference isn\'t a specific test — it\'s consistency. Patients who keep a single annual wellness visit on the calendar, year after year, catch problems earlier than those who only come in when something already feels wrong.',
+      'The habit that makes the biggest difference isn\'t a specific test, it\'s consistency. Patients who keep a single annual wellness visit on the calendar, year after year, catch problems earlier than those who only come in when something already feels wrong.',
       'If it\'s been over a year since your last check-up, that\'s the single most useful thing you can book this month.'
     ]
   },
@@ -139,9 +131,9 @@ const ARTICLES = {
     readTime: '5 min read',
     body: [
       'Most lifestyle advice fails not because it\'s wrong, but because it assumes a life with far more free time than most people actually have. The changes that stick are the small, boring, repeatable ones.',
-      'Movement: aim for 20–30 minutes of moderate activity most days — a brisk walk counts. Consistency beats intensity for long-term cardiovascular and metabolic health.',
+      'Movement: aim for 20–30 minutes of moderate activity most days, a brisk walk counts. Consistency beats intensity for long-term cardiovascular and metabolic health.',
       'Sleep: adults generally need 7–9 hours. A fixed wake-up time, even on weekends, does more for sleep quality than most supplements or gadgets.',
-      'Food: rather than an overhaul, focus on one repeatable swap — more vegetables at dinner, water instead of a second soda — and let it become automatic before adding another.',
+      'Food: rather than an overhaul, focus on one repeatable swap, more vegetables at dinner, water instead of a second soda, and let it become automatic before adding another.',
       'None of this needs to happen all at once. Patients who pick one habit and hold it for a month see better long-term results than those who try to change everything in a week.'
     ]
   },
@@ -152,9 +144,9 @@ const ARTICLES = {
     date: 'June 20, 2026',
     readTime: '4 min read',
     body: [
-      'A checkup does more than confirm you\'re "fine." It builds a baseline — a record of what\'s normal for your body specifically — so that when something does change, your physician can catch the deviation early instead of discovering a problem only once it becomes serious.',
+      'A checkup does more than confirm you\'re "fine." It builds a baseline, a record of what\'s normal for your body specifically, so that when something does change, your physician can catch the deviation early instead of discovering a problem only once it becomes serious.',
       'Conditions like hypertension, thyroid imbalances, and early kidney or liver changes are often only visible through routine labs and exams. By the time symptoms appear, they\'ve frequently been progressing for a long time.',
-      'How often you should come in depends on age, risk factors, and history — but as a general guide, most healthy adults benefit from an annual visit, while those managing a chronic condition may need more frequent check-ins.',
+      'How often you should come in depends on age, risk factors, and history, but as a general guide, most healthy adults benefit from an annual visit, while those managing a chronic condition may need more frequent check-ins.',
       'If you\'re not sure when your last checkup was, that uncertainty is itself a good reason to book one.'
     ]
   }
@@ -274,38 +266,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
   counters.forEach(el => counterObserver.observe(el));
 
-  /* ---------- Testimonial Slider ---------- */
-  const track = document.getElementById('testimonial-track');
-  const slides = track ? Array.from(track.children) : [];
-  const dotsWrap = document.getElementById('testimonial-dots');
-  let activeSlide = 0;
-  let sliderTimer;
-
-  if (track && slides.length) {
-    slides.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.setAttribute('aria-label', `Show testimonial ${i + 1}`);
-      if (i === 0) dot.classList.add('active');
-      dot.addEventListener('click', () => goToSlide(i));
-      dotsWrap.appendChild(dot);
-    });
-
-    function goToSlide(index) {
-      activeSlide = (index + slides.length) % slides.length;
-      track.style.transform = `translateX(-${activeSlide * 100}%)`;
-      Array.from(dotsWrap.children).forEach((d, i) => d.classList.toggle('active', i === activeSlide));
-      resetSliderTimer();
-    }
-    function resetSliderTimer() {
-      clearInterval(sliderTimer);
-      sliderTimer = setInterval(() => goToSlide(activeSlide + 1), 6000);
-    }
-
-    document.getElementById('testi-next').addEventListener('click', () => goToSlide(activeSlide + 1));
-    document.getElementById('testi-prev').addEventListener('click', () => goToSlide(activeSlide - 1));
-    resetSliderTimer();
-  }
-
   /* ---------- FAQ Accordion (single-open) ---------- */
   const accordionItems = document.querySelectorAll('.accordion-item');
   accordionItems.forEach(item => {
@@ -347,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const s = SERVICES[key];
     if (!s) return '<p>Details for this service are coming soon.</p>';
     return `
-      <p class="modal-eyebrow">${s.icon} Service</p>
+      <p class="modal-eyebrow">Service</p>
       <h2 id="modal-title">${s.title}</h2>
       <p>${s.description}</p>
       <h3 class="modal-section-title">Common Treatments</h3>
@@ -378,8 +338,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <h3 class="modal-section-title">Specialties</h3>
       <ul class="modal-list">${d.specialties.map(sp => `<li>${sp}</li>`).join('')}</ul>
       <div class="modal-meta">
-        <span>🗣️ ${d.languages.join(', ')}</span>
-        <span>📅 ${d.days}</span>
+        <span>${d.languages.join(', ')}</span>
+        <span>${d.days}</span>
       </div>
       <a href="#appointment" class="btn btn-primary modal-cta" data-modal-cta>Book with ${d.name}</a>
     `;
@@ -393,9 +353,9 @@ document.addEventListener('DOMContentLoaded', () => {
       <p class="modal-eyebrow">Health Library</p>
       <h2 id="modal-title">${a.title}</h2>
       <div class="modal-meta">
-        <span>✍️ ${a.author}</span>
-        <span>🗓️ ${a.date}</span>
-        <span>⏱️ ${a.readTime}</span>
+        <span>${a.author}</span>
+        <span>${a.date}</span>
+        <span>${a.readTime}</span>
       </div>
       ${a.body.map(p => `<p>${p}</p>`).join('')}
       <div class="modal-disclaimer">This article is for general educational purposes and isn't a substitute for personalized medical advice. Please consult your physician about your specific situation.</div>
@@ -463,7 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* =========================================================
-     APPOINTMENT FORM — validation + loading state + Netlify
+     APPOINTMENT FORM, validation + loading state + Netlify
      ========================================================= */
   const appointmentForm = document.getElementById('appointment-form');
   if (appointmentForm) {
@@ -532,7 +492,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body: encoded
       })
         .then(() => {
-          showToast('Appointment request sent — we\'ll confirm within one business day.', 'success');
+          showToast('Appointment request sent. We\'ll confirm within one business day.', 'success');
           appointmentForm.reset();
         })
         .catch(() => {
