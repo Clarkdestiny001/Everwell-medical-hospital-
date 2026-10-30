@@ -2,9 +2,25 @@
    EVERWELL MEDICAL CENTER - SCRIPT
    ========================================================= */
 
+const ICONS = {
+  activity: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg>',
+  smile: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></svg>',
+  heart: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>',
+  tooth: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5C7 3.12 8.12 2 9.5 2c.9 0 1.7.5 2.5.5s1.6-.5 2.5-.5C15.88 2 17 3.12 17 4.5c0 3-1 4-1 7.5 0 3-1 10-2.5 10-1.3 0-1.5-3-2.5-3s-1.2 3-2.5 3C7 22 8 15 8 12c0-3.5-1-4.5-1-7.5Z"/></svg>',
+  venus: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M12 14v7M9 18h6"/></svg>',
+  flask: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7M7 16h10"/></svg>',
+  syringe: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m18 2 4 4M17 7l3-3M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5M9 11l4 4M5 19l-3 3M14 4l6 6"/></svg>',
+  ambulance: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 10H6M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2M19 18h2a1 1 0 0 0 1-1v-3.28a1 1 0 0 0-.684-.948l-1.923-.641a1 1 0 0 1-.578-.502l-1.539-3.076A1 1 0 0 0 16.382 8H14M8 8v4M9 18h6"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>',
+  globe: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+  calendar: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
+  user: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+  clock: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>'
+};
+
 /* =============== CONTENT DATA (modals) =============== */
 const SERVICES = {
   'general-medicine': {
+    icon: ICONS.activity,
     title: 'General Medicine',
     description: 'Our General Medicine team handles everyday health concerns, ongoing conditions, and preventive screening, the first stop for most patients and the hub that coordinates referrals to specialists when needed.',
     treatments: ['Annual physicals & wellness exams', 'Cold, flu, and infection management', 'Chronic condition monitoring (diabetes, hypertension)', 'Preventive screenings & bloodwork', 'Referrals to specialists'],
@@ -12,6 +28,7 @@ const SERVICES = {
     whenToVisit: 'Book a visit for routine check-ups, unexplained symptoms, medication reviews, or whenever something feels off and you\'re not sure which specialist to see.'
   },
   'pediatrics': {
+    icon: ICONS.smile,
     title: 'Pediatrics',
     description: 'Gentle, thorough care for infants through adolescence, delivered in a calm environment designed to put both kids and parents at ease.',
     treatments: ['Well-child visits & growth tracking', 'Childhood vaccinations', 'Developmental screenings', 'Acute illness care', 'Adolescent health & counseling'],
@@ -19,6 +36,7 @@ const SERVICES = {
     whenToVisit: 'Schedule regular well-child visits on your pediatrician\'s recommended timeline, plus any time your child is unwell, injured, or due for vaccinations.'
   },
   'cardiology': {
+    icon: ICONS.heart,
     title: 'Cardiology',
     description: 'Comprehensive heart health monitoring, diagnostics, and long-term care for patients managing or preventing cardiovascular conditions.',
     treatments: ['ECG & echocardiogram', 'Blood pressure & cholesterol management', 'Arrhythmia evaluation', 'Cardiac stress testing', 'Post-cardiac-event follow-up'],
@@ -26,6 +44,7 @@ const SERVICES = {
     whenToVisit: 'See a cardiologist for chest discomfort, shortness of breath, irregular heartbeat, a family history of heart disease, or as part of routine risk screening after age 40.'
   },
   'dentistry': {
+    icon: ICONS.tooth,
     title: 'Dentistry',
     description: 'Preventive and restorative dental care for the whole family, from routine cleanings to more involved restorative work.',
     treatments: ['Cleanings & exams', 'Fillings & restorations', 'Root canal therapy', 'Cosmetic consultations', 'Emergency dental care'],
@@ -33,6 +52,7 @@ const SERVICES = {
     whenToVisit: 'Visit twice a year for routine cleanings, and sooner for pain, sensitivity, swelling, or a damaged tooth.'
   },
   'womens-health': {
+    icon: ICONS.venus,
     title: "Women's Health",
     description: 'Comprehensive, respectful care across every stage of a woman\'s life, from adolescence through pregnancy and beyond.',
     treatments: ['Annual wellness exams', 'Prenatal & postnatal care', 'Family planning & contraception counseling', 'Menopause management', 'Reproductive health screening'],
@@ -40,6 +60,7 @@ const SERVICES = {
     whenToVisit: 'Schedule an annual wellness exam, or book sooner for pregnancy care, cycle irregularities, or any new symptoms you\'d like evaluated.'
   },
   'laboratory': {
+    icon: ICONS.flask,
     title: 'Laboratory Services',
     description: 'Fast, accurate diagnostic testing with results delivered securely to your patient portal, usually within 24–48 hours.',
     treatments: ['Bloodwork & metabolic panels', 'Urinalysis', 'Allergy & sensitivity testing', 'Rapid infectious disease testing', 'Specialist-ordered diagnostics'],
@@ -47,6 +68,7 @@ const SERVICES = {
     whenToVisit: 'Come in whenever your physician orders labs, or proactively for annual bloodwork as part of a wellness exam.'
   },
   'vaccinations': {
+    icon: ICONS.syringe,
     title: 'Vaccinations',
     description: 'Routine, catch-up, and travel immunizations for every age group, administered by our clinical team with your full history on file.',
     treatments: ['Routine childhood & adult immunizations', 'Seasonal flu shots', 'Travel vaccinations', 'Booster tracking & reminders', 'Titer testing'],
@@ -54,6 +76,7 @@ const SERVICES = {
     whenToVisit: 'Book ahead of school enrollment, international travel, flu season, or whenever you\'re due for a booster.'
   },
   'emergency-care': {
+    icon: ICONS.ambulance,
     title: 'Emergency Care',
     description: '24/7 emergency response with a rapid-triage team on call, equipped to stabilize and treat urgent conditions the moment you arrive.',
     treatments: ['Rapid triage & stabilization', 'Trauma & injury care', 'Acute cardiac & respiratory response', 'Emergency diagnostics on-site', 'Coordination with specialist teams'],
@@ -307,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const s = SERVICES[key];
     if (!s) return '<p>Details for this service are coming soon.</p>';
     return `
-      <p class="modal-eyebrow">Service</p>
+      <p class="modal-eyebrow">${s.icon} Service</p>
       <h2 id="modal-title">${s.title}</h2>
       <p>${s.description}</p>
       <h3 class="modal-section-title">Common Treatments</h3>
@@ -338,8 +361,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <h3 class="modal-section-title">Specialties</h3>
       <ul class="modal-list">${d.specialties.map(sp => `<li>${sp}</li>`).join('')}</ul>
       <div class="modal-meta">
-        <span>${d.languages.join(', ')}</span>
-        <span>${d.days}</span>
+        <span>${ICONS.globe} ${d.languages.join(', ')}</span>
+        <span>${ICONS.calendar} ${d.days}</span>
       </div>
       <a href="#appointment" class="btn btn-primary modal-cta" data-modal-cta>Book with ${d.name}</a>
     `;
@@ -353,9 +376,9 @@ document.addEventListener('DOMContentLoaded', () => {
       <p class="modal-eyebrow">Health Library</p>
       <h2 id="modal-title">${a.title}</h2>
       <div class="modal-meta">
-        <span>${a.author}</span>
-        <span>${a.date}</span>
-        <span>${a.readTime}</span>
+        <span>${ICONS.user} ${a.author}</span>
+        <span>${ICONS.calendar} ${a.date}</span>
+        <span>${ICONS.clock} ${a.readTime}</span>
       </div>
       ${a.body.map(p => `<p>${p}</p>`).join('')}
       <div class="modal-disclaimer">This article is for general educational purposes and isn't a substitute for personalized medical advice. Please consult your physician about your specific situation.</div>

@@ -268,6 +268,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   padding: 1.4rem; transition: transform .3s var(--ease), box-shadow .3s var(--ease);
 }
 .feature-card:hover{ transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.ico{ width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; vertical-align: -.125em; }
+.feature-icon{ font-size: 1.6rem; margin-bottom: .5rem; color: var(--secondary); }
+.service-icon{ font-size: 1.8rem; margin-bottom: .8rem; position: relative; color: var(--secondary); }
+.why-icon{
+  width: 58px; height: 58px; margin: 0 auto 1rem; border-radius: 50%;
+  background: var(--secondary-light); color: var(--secondary); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;
+}
+.btn-emergency .ico{ margin-right: .35em; }
 .feature-card h3{ font-size: 1rem; margin-bottom: .3em; }
 .feature-card p{ font-size: .88rem; margin: 0; }
 
@@ -557,7 +565,7 @@ button.card-link{
 .floating-emergency{
   position: fixed; bottom: 96px; left: 28px; z-index: 400;
   width: 52px; height: 52px; border-radius: 50%;
-  background: #B42B26; color: #fff; font-size: .8rem; font-weight: 700; letter-spacing: .04em;
+  background: #B42B26; color: #fff; font-size: 1.3rem;
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 10px 26px rgba(198,48,43,0.4);
   animation: pulse-emergency 2.6s ease-in-out infinite;
@@ -625,7 +633,7 @@ button.card-link{
   .modal-body{ padding: 0 1.3rem 1.6rem; }
   .modal-hero{ width: calc(100% + 2.6rem); margin: -1px -1.3rem 1.2rem; height: 170px; }
   .modal-doctor-head{ flex-direction: column; text-align: center; }
-  .floating-emergency{ bottom: 168px; left: 18px; width: 46px; height: 46px; font-size: .75rem; }
+  .floating-emergency{ bottom: 168px; left: 18px; width: 46px; height: 46px; font-size: 1.1rem; }
 }
 
 /* Prevent background scroll while modal is open */
