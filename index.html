@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Everwell Medical Center | Healthcare You Can Trust</title>
+<meta name="description" content="Everwell Medical Center — compassionate care, experienced specialists, and advanced medical technology focused on your wellbeing. Book an appointment today.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230F4C81'/%3E%3Cpath d='M50 22 L58 42 L80 42 L62 55 L69 78 L50 64 L31 78 L38 55 L20 42 L42 42 Z' fill='none'/%3E%3Cpath d='M20 52 H36 L42 40 L50 66 L57 52 H80' stroke='%231AA6A6' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= LOADING SCREEN ================= -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-mark">
+    <svg width="56" height="56" viewBox="0 0 100 100" fill="none">
+      <rect width="100" height="100" rx="22" fill="#0F4C81"/>
+      <path d="M18 52 H34 L40 38 L50 68 L58 52 H82" stroke="#1AA6A6" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" class="loader-path"/>
+    </svg>
+  </div>
+  <p>Everwell Medical Center</p>
+</div>
+
+<!-- ================= SKIP LINK ================= -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ================= NAVIGATION ================= -->
+<header id="site-header">
+  <nav class="nav-wrap" aria-label="Primary">
+    <a href="#home" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 100 100" fill="none">
+          <rect width="100" height="100" rx="22" fill="#0F4C81"/>
+          <path d="M18 52 H34 L40 38 L50 68 L58 52 H82" stroke="#1AA6A6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">Everwell <em>Medical Center</em></span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#doctors">Doctors</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="dark-toggle" class="icon-btn" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+      </button>
+      <a href="#appointment" class="btn btn-primary nav-cta">Book Appointment</a>
+      <button id="menu-toggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img src="https://images.pexels.com/photos/15238817/pexels-photo-15238817.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Team of Everwell physicians standing together" loading="eager">
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="hero-shapes" aria-hidden="true">
+    <span class="shape shape-1"></span>
+    <span class="shape shape-2"></span>
+    <span class="shape shape-3"></span>
+  </div>
+
+  <div class="hero-inner container">
+    <div class="hero-copy reveal-up">
+      <p class="eyebrow">Everwell Medical Center</p>
+      <h1>Healthcare You <span>Can Trust.</span></h1>
+      <p class="hero-sub">Compassionate care, experienced specialists, and advanced medical technology focused on your wellbeing.</p>
+      <div class="hero-btns">
+        <a href="#appointment" class="btn btn-primary btn-lg">Book Appointment</a>
+        <a href="#services" class="btn btn-ghost btn-lg">Our Services</a>
+      </div>
+    </div>
+
+    <div class="hero-vitals reveal-up" style="--delay:.2s" aria-hidden="true">
+      <div class="vitals-card glass">
+        <svg class="vitals-line" viewBox="0 0 300 60" preserveAspectRatio="none">
+          <polyline points="0,30 40,30 55,10 70,50 85,30 130,30 145,15 160,45 175,30 300,30" />
+        </svg>
+        <div class="vitals-row">
+          <div><span class="vitals-num" data-count="99">0</span><span>% Satisfaction</span></div>
+          <div><span class="vitals-num" data-count="45">0</span><span>+ Experts</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to content"><span></span></a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section about">
+  <div class="container about-grid">
+    <div class="about-media reveal-up">
+      <img src="https://images.pexels.com/photos/10827916/pexels-photo-10827916.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Everwell doctors in white coats walking through the hospital corridor" loading="lazy">
+      <div class="about-badge glass">
+        <strong>18</strong>
+        <span>Departments under one roof</span>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <p class="eyebrow">About Everwell</p>
+      <h2 class="reveal-up">Care built around <span class="accent">you</span>, not the other way around.</h2>
+      <p class="reveal-up" style="--delay:.05s">For over two decades, Everwell Medical Center has paired board-certified specialists with modern diagnostic technology to deliver healthcare that feels personal — from your first call to your last follow-up.</p>
+
+      <div class="feature-grid">
+        <div class="feature-card reveal-up" style="--delay:.05s">
+          <div class="feature-icon">🩺</div>
+          <h3>Experienced Specialists</h3>
+          <p>Board-certified physicians across 18 departments.</p>
+        </div>
+        <div class="feature-card reveal-up" style="--delay:.1s">
+          <div class="feature-icon">🖥️</div>
+          <h3>Modern Equipment</h3>
+          <p>Diagnostic technology updated to today's standards.</p>
+        </div>
+        <div class="feature-card reveal-up" style="--delay:.15s">
+          <div class="feature-icon">💙</div>
+          <h3>Patient-Centered Care</h3>
+          <p>Treatment plans built around your life, not a template.</p>
+        </div>
+        <div class="feature-card reveal-up" style="--delay:.2s">
+          <div class="feature-icon">🛡️</div>
+          <h3>Trusted Healthcare</h3>
+          <p>20,000+ patients treated with a 99% satisfaction rate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="section services-section alt-bg">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">What We Treat</p>
+      <h2 class="reveal-up">Services designed around every stage of life</h2>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal-up">
+        <div class="service-icon">🩹</div>
+        <h3>General Medicine</h3>
+        <p>Everyday health concerns, check-ups, and preventive screening.</p>
+        <button type="button" class="card-link" data-modal-open="service" data-service="general-medicine">Learn More →</button>
+      </article>
+      <article class="service-card reveal-up" style="--delay:.05s">
+        <div class="service-icon">🧸</div>
+        <h3>Pediatrics</h3>
+        <p>Gentle, thorough care for infants through adolescence.</p>
+        <button type="button" class="card-link" data-modal-open="service" data-service="pediatrics">Learn More →</button>
+      </article>
+      <article class="service-card reveal-up" style="--delay:.1s">
+        <div class="service-icon">❤️</div>
+        <h3>Cardiology</h3>
+        <p>Heart health monitoring, diagnostics, and long-term care.</p>
+        <button type="button" class="card-link" data-modal-open="service" data-service="cardiology">Learn More →</button>
+      </article>
+      <article class="service-card reveal-up" style="--delay:.15s">
+        <div class="service-icon">🦷</div>
+        <h3>Dentistry</h3>
+        <p>Preventive and restorative dental care for the whole family.</p>
+        <button type="button" class="card-link" data-modal-open="service" data-service="dentistry">Learn More →</button>
+      </article>
+      <article class="service-card reveal-up" style="--delay:.2s">
+        <div class="service-icon">🌷</div>
+        <h3>Women's Health</h3>
+        <p>Comprehensive care across every stage of a woman's life.</p>
+        <button type="button" class="card-link" data-modal-open="service" data-service="womens-health">Learn More →</button>
+      </article>
+      <article class="service-card reveal-up" style="--delay:.25s">
+        <div class="service-icon">🧪</div>
+        <h3>Laboratory Services</h3>
+        <p>Fast, accurate testing with results you can access online.</p>
+        <button type="button" class="card-link" data-modal-open="service" data-service="laboratory">Learn More →</button>
+      </article>
+      <article class="service-card reveal-up" style="--delay:.3s">
+        <div class="service-icon">💉</div>
+        <h3>Vaccinations</h3>
+        <p>Routine and travel immunizations for every age group.</p>
+        <button type="button" class="card-link" data-modal-open="service" data-service="vaccinations">Learn More →</button>
+      </article>
+      <article class="service-card reveal-up" style="--delay:.35s">
+        <div class="service-icon">🚑</div>
+        <h3>Emergency Care</h3>
+        <p>24/7 emergency response with a rapid-triage team on call.</p>
+        <button type="button" class="card-link" data-modal-open="service" data-service="emergency-care">Learn More →</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="section why-section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Why Everwell</p>
+      <h2 class="reveal-up">The details that make care feel easier</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal-up">
+        <div class="why-icon">🕐</div>
+        <h3>24/7 Emergency</h3>
+        <p>Round-the-clock emergency response, every day of the year.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:.05s">
+        <div class="why-icon">🎓</div>
+        <h3>Certified Doctors</h3>
+        <p>Every physician is board-certified in their specialty.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:.1s">
+        <div class="why-icon">📁</div>
+        <h3>Digital Medical Records</h3>
+        <p>Secure access to your history, results, and prescriptions.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:.15s">
+        <div class="why-icon">🔬</div>
+        <h3>Modern Technology</h3>
+        <p>Advanced diagnostic and treatment equipment throughout.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:.2s">
+        <div class="why-icon">⚡</div>
+        <h3>Fast Appointment Booking</h3>
+        <p>Book online in under a minute, no phone tag required.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:.25s">
+        <div class="why-icon">🤝</div>
+        <h3>Friendly Healthcare Staff</h3>
+        <p>A team that treats every visit like it matters — because it does.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DOCTORS ================= -->
+<section id="doctors" class="section doctors-section alt-bg">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Our Doctors</p>
+      <h2 class="reveal-up">Meet a few of our specialists</h2>
+    </div>
+
+    <div class="doctors-grid">
+      <article class="doctor-card reveal-up">
+        <div class="doctor-photo">
+          <img src="https://images.pexels.com/photos/32160037/pexels-photo-32160037.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dr. Julian Marsh" loading="lazy">
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Julian Marsh</h3>
+          <p class="doctor-specialty">Cardiology · 14 years experience</p>
+          <p class="doctor-bio">Focuses on preventive heart care and long-term patient relationships.</p>
+          <div class="doctor-social" aria-label="Official channels coming soon">
+            <span title="Official Channels Coming Soon">in</span>
+            <span title="Official Channels Coming Soon">tw</span>
+            <span title="Official Channels Coming Soon">ig</span>
+          </div>
+          <button type="button" class="btn btn-ghost-sm view-profile-btn" data-modal-open="doctor" data-doctor="julian-marsh">View Profile</button>
+        </div>
+      </article>
+
+      <article class="doctor-card reveal-up" style="--delay:.05s">
+        <div class="doctor-photo">
+          <img src="https://images.pexels.com/photos/19438566/pexels-photo-19438566.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dr. Amir Rahman" loading="lazy">
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Amir Rahman</h3>
+          <p class="doctor-specialty">General Medicine · 11 years experience</p>
+          <p class="doctor-bio">Believes the best treatment plan starts with genuinely listening first.</p>
+          <div class="doctor-social" aria-label="Official channels coming soon">
+            <span title="Official Channels Coming Soon">in</span>
+            <span title="Official Channels Coming Soon">tw</span>
+            <span title="Official Channels Coming Soon">ig</span>
+          </div>
+          <button type="button" class="btn btn-ghost-sm view-profile-btn" data-modal-open="doctor" data-doctor="amir-rahman">View Profile</button>
+        </div>
+      </article>
+
+      <article class="doctor-card reveal-up" style="--delay:.1s">
+        <div class="doctor-photo">
+          <img src="https://images.pexels.com/photos/32254655/pexels-photo-32254655.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dr. Maya Chen" loading="lazy">
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Maya Chen</h3>
+          <p class="doctor-specialty">Pediatrics · 9 years experience</p>
+          <p class="doctor-bio">Specializes in making young patients feel calm, safe, and heard.</p>
+          <div class="doctor-social" aria-label="Official channels coming soon">
+            <span title="Official Channels Coming Soon">in</span>
+            <span title="Official Channels Coming Soon">tw</span>
+            <span title="Official Channels Coming Soon">ig</span>
+          </div>
+          <button type="button" class="btn btn-ghost-sm view-profile-btn" data-modal-open="doctor" data-doctor="maya-chen">View Profile</button>
+        </div>
+      </article>
+
+      <article class="doctor-card reveal-up" style="--delay:.15s">
+        <div class="doctor-photo">
+          <img src="https://images.pexels.com/photos/8460094/pexels-photo-8460094.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dr. Robert Hale" loading="lazy">
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Robert Hale</h3>
+          <p class="doctor-specialty">Emergency Care · 20 years experience</p>
+          <p class="doctor-bio">Leads our emergency team with a calm, decisive approach under pressure.</p>
+          <div class="doctor-social" aria-label="Official channels coming soon">
+            <span title="Official Channels Coming Soon">in</span>
+            <span title="Official Channels Coming Soon">tw</span>
+            <span title="Official Channels Coming Soon">ig</span>
+          </div>
+          <button type="button" class="btn btn-ghost-sm view-profile-btn" data-modal-open="doctor" data-doctor="robert-hale">View Profile</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATISTICS ================= -->
+<section class="stats-section">
+  <div class="container stats-grid">
+    <div class="stat-item reveal-up">
+      <span class="stat-num" data-count="20000">0</span><span class="stat-suffix">+</span>
+      <p>Patients Treated</p>
+    </div>
+    <div class="stat-item reveal-up" style="--delay:.05s">
+      <span class="stat-num" data-count="45">0</span><span class="stat-suffix">+</span>
+      <p>Medical Experts</p>
+    </div>
+    <div class="stat-item reveal-up" style="--delay:.1s">
+      <span class="stat-num" data-count="18">0</span>
+      <p>Departments</p>
+    </div>
+    <div class="stat-item reveal-up" style="--delay:.15s">
+      <span class="stat-num" data-count="99">0</span><span class="stat-suffix">%</span>
+      <p>Patient Satisfaction</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSURANCE PARTNERS ================= -->
+<section class="section insurance-section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Coverage</p>
+      <h2 class="reveal-up">We work with your insurance provider</h2>
+    </div>
+    <div class="insurance-grid">
+      <div class="insurance-card reveal-up">HealthGuard</div>
+      <div class="insurance-card reveal-up" style="--delay:.05s">MediShield</div>
+      <div class="insurance-card reveal-up" style="--delay:.1s">TrustCare Plus</div>
+      <div class="insurance-card reveal-up" style="--delay:.15s">Aurora Health</div>
+      <div class="insurance-card reveal-up" style="--delay:.2s">Northline Assurance</div>
+      <div class="insurance-card reveal-up" style="--delay:.25s">Beacon Wellness</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials" class="section testimonials-section alt-bg">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Patient Stories</p>
+      <h2 class="reveal-up">What our patients say</h2>
+    </div>
+
+    <div class="testimonial-slider">
+      <div class="testimonial-viewport">
+        <div class="testimonial-track" id="testimonial-track">
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"From the front desk to the doctor, everyone treated me like a person, not a chart number. I finally feel like my care is actually coordinated."</p>
+          <div class="testimonial-person">
+            <img src="https://i.pravatar.cc/80?img=47" alt="" loading="lazy">
+            <div><strong>Grace Whitfield</strong><span>Cardiology Patient</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Booking online took two minutes and I got a same-week appointment. My pediatrician actually remembered details from our last visit."</p>
+          <div class="testimonial-person">
+            <img src="https://i.pravatar.cc/80?img=12" alt="" loading="lazy">
+            <div><strong>Marcus Ibe</strong><span>Pediatrics Parent</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"The emergency team had me stabilized and explained everything calmly within minutes. I've never felt more taken care of in a scary moment."</p>
+          <div class="testimonial-person">
+            <img src="https://i.pravatar.cc/80?img=33" alt="" loading="lazy">
+            <div><strong>Priya Nandakumar</strong><span>Emergency Care Patient</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"My lab results were online before I even got home. Small thing, but it says a lot about how this place is run."</p>
+          <div class="testimonial-person">
+            <img src="https://i.pravatar.cc/80?img=68" alt="" loading="lazy">
+            <div><strong>Daniel Osei</strong><span>General Medicine Patient</span></div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="testimonial-controls">
+        <button id="testi-prev" class="icon-btn" aria-label="Previous testimonial">‹</button>
+        <div class="testimonial-dots" id="testimonial-dots"></div>
+        <button id="testi-next" class="icon-btn" aria-label="Next testimonial">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HEALTH TIPS ================= -->
+<section class="section tips-section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Health Library</p>
+      <h2 class="reveal-up">Tips for staying ahead of your health</h2>
+    </div>
+
+    <div class="tips-grid">
+      <article class="tip-card reveal-up">
+        <div class="tip-media">
+          <img src="https://images.pexels.com/photos/4173316/pexels-photo-4173316.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Choosing fresh vegetables" loading="lazy">
+          <span class="tip-tag">Prevention</span>
+        </div>
+        <div class="tip-body">
+          <span class="tip-date">July 14, 2026</span>
+          <h3>Preventive Healthcare: Small Habits, Big Payoff</h3>
+          <p>Why routine screenings catch what symptoms don't — and how to build a schedule that actually sticks.</p>
+          <button type="button" class="card-link" data-modal-open="article" data-article="preventive-healthcare">Read More →</button>
+        </div>
+      </article>
+
+      <article class="tip-card reveal-up" style="--delay:.05s">
+        <div class="tip-media">
+          <img src="https://images.pexels.com/photos/5319373/pexels-photo-5319373.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Group jogging together" loading="lazy">
+          <span class="tip-tag">Lifestyle</span>
+        </div>
+        <div class="tip-body">
+          <span class="tip-date">July 2, 2026</span>
+          <h3>Healthy Lifestyle Tips That Fit a Real Schedule</h3>
+          <p>Practical, unglamorous changes to movement and sleep that compound over months, not days.</p>
+          <button type="button" class="card-link" data-modal-open="article" data-article="healthy-lifestyle">Read More →</button>
+        </div>
+      </article>
+
+      <article class="tip-card reveal-up" style="--delay:.1s">
+        <div class="tip-media">
+          <img src="https://images.pexels.com/photos/6129681/pexels-photo-6129681.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Doctor talking with a patient" loading="lazy">
+          <span class="tip-tag">Check-ups</span>
+        </div>
+        <div class="tip-body">
+          <span class="tip-date">June 20, 2026</span>
+          <h3>Why Regular Checkups Matter More Than You Think</h3>
+          <p>The quiet conditions that only show up on a chart — and how often you should really be looking.</p>
+          <button type="button" class="card-link" data-modal-open="article" data-article="regular-checkups">Read More →</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="section faq-section alt-bg">
+  <div class="container faq-container">
+    <div class="section-head">
+      <p class="eyebrow">Questions</p>
+      <h2 class="reveal-up">Frequently asked questions</h2>
+    </div>
+
+    <div class="accordion" id="accordion">
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Do I need a referral to see a specialist?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>In most cases, no — you can book directly with any specialist through our online system. Some insurance plans may require a referral, so it's worth a quick check with your provider.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>What insurance plans do you accept?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>We partner with most major providers, including the plans listed above. Contact our front desk with your provider name and we'll confirm coverage before your visit.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>How quickly can I get an appointment?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Most departments offer same-week availability, and urgent cases are typically seen within 24 hours. Emergency care is available 24/7.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Can I access my medical records online?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes. Every patient gets secure online access to lab results, visit summaries, and prescriptions through our patient portal.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>What should I bring to my first visit?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>A photo ID, your insurance card, and a list of current medications. If you have prior records, feel free to bring or forward them ahead of time.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>Do you treat children as well as adults?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes — our pediatrics department cares for infants through adolescents, alongside our general and specialist care for adults.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPOINTMENT ================= -->
+<section id="appointment" class="section appointment-section">
+  <div class="container appointment-grid">
+    <div class="appointment-copy">
+      <p class="eyebrow">Book a Visit</p>
+      <h2 class="reveal-up">Let's get you seen</h2>
+      <p class="reveal-up" style="--delay:.05s">Fill out the form and our care team will confirm your appointment within one business day. For emergencies, please call our hotline directly instead.</p>
+    </div>
+
+    <form name="appointment" method="POST" data-netlify="true" novalidate class="appointment-form glass reveal-up" id="appointment-form" aria-describedby="form-instructions">
+      <p id="form-instructions" class="visually-hidden">All fields marked required must be completed before submitting.</p>
+      <input type="hidden" name="form-name" value="appointment">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="fullname">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="fullname" name="fullname" minlength="2" required aria-required="true" aria-describedby="err-fullname">
+          <span class="form-error" id="err-fullname" aria-live="polite"></span>
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+          <input type="tel" id="phone" name="phone" pattern="^[0-9+()\-\s]{7,20}$" required aria-required="true" aria-describedby="err-phone" placeholder="(555) 014-7788">
+          <span class="form-error" id="err-phone" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" required aria-required="true" aria-describedby="err-email">
+          <span class="form-error" id="err-email" aria-live="polite"></span>
+        </div>
+        <div class="form-field">
+          <label for="department">Department <span aria-hidden="true">*</span></label>
+          <select id="department" name="department" required aria-required="true" aria-describedby="err-department">
+            <option value="">Select department</option>
+            <option>General Medicine</option>
+            <option>Pediatrics</option>
+            <option>Cardiology</option>
+            <option>Dentistry</option>
+            <option>Women's Health</option>
+            <option>Laboratory Services</option>
+            <option>Vaccinations</option>
+            <option>Emergency Care</option>
+          </select>
+          <span class="form-error" id="err-department" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="doctor">Preferred Doctor</label>
+          <input type="text" id="doctor" name="doctor" placeholder="Optional">
+        </div>
+        <div class="form-field">
+          <label for="date">Preferred Date <span aria-hidden="true">*</span></label>
+          <input type="date" id="date" name="date" required aria-required="true" aria-describedby="err-date">
+          <span class="form-error" id="err-date" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us briefly what brings you in"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-block" id="appointment-submit">
+        <span class="btn-label">Request Appointment</span>
+        <span class="btn-spinner" aria-hidden="true"></span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section class="section location-section alt-bg">
+  <div class="container location-grid">
+    <div class="location-map reveal-up">
+      <iframe title="Everwell Medical Center location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.912345678!2d-73.985!3d40.748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzUyLjgiTiA3M8KwNTknMDYuMCJX!5e0!3m2!1sen!2sus!4v1680000000000" width="100%" height="380" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="location-info reveal-up" style="--delay:.05s">
+      <p class="eyebrow">Find Us</p>
+      <h2>Visit Everwell Medical Center</h2>
+      <ul class="info-list">
+        <li><strong>Address</strong><span>128 Harborview Avenue, Suite 400, Meridian City</span></li>
+        <li><strong>Phone</strong><span>(555) 014-7788</span></li>
+        <li><strong>Email</strong><span>care@everwellmedical.example</span></li>
+        <li><strong>Emergency Hotline</strong><span>(555) 014-9111</span></li>
+        <li><strong>Opening Hours</strong><span>Mon–Fri 7am–8pm · Sat 8am–5pm · Emergency 24/7</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EMERGENCY BANNER ================= -->
+<section class="emergency-banner">
+  <div class="container emergency-inner">
+    <div>
+      <p class="emergency-eyebrow">Medical Emergency?</p>
+      <h2>Don't wait — call us immediately.</h2>
+    </div>
+    <a href="tel:+15550149111" class="btn btn-emergency">📞 (555) 014-9111</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact" class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo footer-logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 100 100" fill="none">
+            <rect width="100" height="100" rx="22" fill="#1AA6A6"/>
+            <path d="M18 52 H34 L40 38 L50 68 L58 52 H82" stroke="#0B2036" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Everwell <em>Medical Center</em></span>
+      </a>
+      <p>Healthcare You Can Trust. Compassionate specialists and modern technology, focused on your wellbeing.</p>
+      <div class="footer-social" aria-label="Official channels coming soon">
+        <span title="Official Channels Coming Soon">in</span>
+        <span title="Official Channels Coming Soon">tw</span>
+        <span title="Official Channels Coming Soon">ig</span>
+        <span title="Official Channels Coming Soon">fb</span>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li>General Medicine</li>
+        <li>Cardiology</li>
+        <li>Pediatrics</li>
+        <li>Dentistry</li>
+        <li>Emergency Care</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>128 Harborview Avenue, Suite 400</li>
+        <li>(555) 014-7788</li>
+        <li>care@everwellmedical.example</li>
+        <li>Mon–Fri 7am–8pm · Sat 8am–5pm</li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h4>Stay Updated</h4>
+      <p>Health tips, no spam.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>&copy; <span id="year"></span> Everwell Medical Center. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="back-to-top" class="icon-btn back-to-top" aria-label="Back to top">↑</button>
+<a href="#appointment" class="floating-book" aria-label="Book appointment">🗓️ Book Appointment</a>
+<a href="tel:+15550149111" class="floating-emergency" aria-label="Call emergency hotline (555) 014-9111">🚨</a>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- ================= MODAL (shared: service / doctor / article) ================= -->
+<div id="site-modal" class="modal-overlay" aria-hidden="true">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <button type="button" class="modal-close" id="modal-close" aria-label="Close dialog">✕</button>
+    <div id="modal-body" class="modal-body">
+      <!-- populated by script.js -->
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
